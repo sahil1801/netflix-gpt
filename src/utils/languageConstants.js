@@ -8,8 +8,16 @@ export const lang = {
         gptSearchPlaceholder: "आज आप क्या देखना चाहेंगे?"
     },
     spanish: {
-        search: "buscar",
+        search: "Buscar",
         gptSearchPlaceholder: "¿Qué te gustaría ver hoy?"
-    }
+    },
+    german: {
+        search: "Suchen",
+        gptSearchPlaceholder: "Was möchtest du heute sehen?"
+    },
+    russian: {
+        search: "Poisk",
+        gptSearchPlaceholder: "Chto by vy khoteli posmotret' segodnya?"
+    },
 }
 

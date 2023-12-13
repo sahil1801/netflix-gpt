@@ -48,21 +48,21 @@ export const Header = () => {
   }
 
   return (
-    <div className="absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
-      <img className="w-44" alt="logo" src={LOGO}/>
+    <div className="absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex flex-col md:flex-row  justify-between">
+      <img className="w-44 mx-auto md:mx-0" alt="logo" src={LOGO}/>
       {user && (
-        <div className="flex p-1">
+        <div className="flex p-1 justify-between">
           {showGptSearch &&
-            <select className="my-5 -mx-2 px-3 py-2 bg-gray-800 text-white rounded-md" onChange={handleLanguageChange}>
+            <select className="my-5 -mx-2 px-3 py-2 bg-gray-800 hover:bg-gray-900 text-white rounded-md" onChange={handleLanguageChange}>
             {SUPPORTED_LANGUAGES.map(lang => <option key={lang.identifier} value={lang.identifier}>{lang.name}</option>)}
           </select>}
-          <button className="text-white font-semibold my-5 mx-7 px-4 py-2 bg-purple-700 rounded-lg" onClick={handleGptSearchClick}>{showGptSearch ? "Home" :" GPT Search"}</button>
+          <button className="text-md text-white font-semibold my-5 ml-0 md:mx-7 px-4 py-2 bg-purple-700 rounded-lg hover:bg-purple-800" onClick={handleGptSearchClick}>{showGptSearch ? "Home" :" GPT Search"}</button>
           <img 
-            className="w-12 h-12 mt-4 rounded-lg"
+            className="hidden w-12 h-12 mt-4 rounded-lg"
             alt="userIcon"
             src= {user?.photoURL}
           />
-          <button onClick={handleSignOut} className="font-semibold p-2 rounded-lg my-4 ml-2 text-white bg-red-700">Sign Out</button>
+          <button onClick={handleSignOut} className="font-semibold px-1 md:p-2 rounded-lg my-4 ml-2 text-white bg-red-600 hover:bg-red-700">Sign Out</button>
         </div>
       )}
     </div>

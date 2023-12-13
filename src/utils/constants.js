@@ -8,10 +8,19 @@ export const API_OPTIONS =  {
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMmI0NTQxMDY5NjhmNDg2OWUyMzAxMTY4M2E2NjU3OCIsInN1YiI6IjY1NzQxYjFjYmJlMWRkMDExYjhmNjE2OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9yRTcBDZheNjZwzKKcK-2mtoMH1Oh0ftTUMMlIe5B-Q'
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzMmI0NTQxMDY5NjhmNDg2OWUyMzAxMTY4M2E2NjU3OCIsInN1YiI6IjY1NzQxYjFjYmJlMWRkMDExYjhmNjE2OCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.9yRTcBDZheNjZwzKKcK-2mtoMH1Oh0ftTUMMlIe5B-Q' 
     }
 };
 
 export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500/"
 
-export const SUPPORTED_LANGUAGES = [{identifier: "en", name: "English"}, {identifier: "hindi", name: "Hindi"}, {identifier: "spanish", name: "Spanish"}]
+export const SUPPORTED_LANGUAGES = [
+  {identifier: "en", name: "English"}, 
+  {identifier: "hindi", name: "Hindi"}, 
+  {identifier: "spanish", name: "Spanish"},
+  {identifier: "german", name:"German"},
+  {identifier: "russian", name:"Russian"},
+
+];
+
+export const OPENAI_KEY = "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";

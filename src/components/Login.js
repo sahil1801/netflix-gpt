@@ -82,11 +82,12 @@ export const Login = () => {
     <div>
       <Header/>
       <div className="absolute">
-        <img src= {BG_URL}
+        <img className="h-screen object-cover md:h-full"
+        src= {BG_URL}
           alt="background"
         />
       </div>
-      <form onSubmit={(e) => e.preventDefault()} className="absolute w-3/12 p-12 bg-black my-36 mx-auto right-0 left-0 text-white bg-opacity-80">
+      <form onSubmit={(e) => e.preventDefault()} className="absolute w-full md:w-3/12 p-12 bg-black my-36 mx-auto right-0 left-0 text-white bg-opacity-80">
         <h1 
           className="text-white font-semibold py-5 text-3xl">{isSignInForm ? "Sign In" : "Sign Up"}
         </h1>
